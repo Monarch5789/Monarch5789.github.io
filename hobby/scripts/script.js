@@ -16,5 +16,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Show the "What" section by default
-    document.getElementById('what').style.display = 'block';
+    document.getElementById('home').style.display = 'block';
 });
