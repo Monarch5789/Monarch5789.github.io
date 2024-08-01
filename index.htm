@@ -3,21 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidan Perkins</title>
+    <title>Aidan Perkins' Amazing Penguin || ITIS 3135 || Home</title>
+    <link rel="stylesheet" href="/styles/default.css">
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
     </head>
         <body>
-            <h2>This is the Home Page.</h2>
-            <p>This is the home page for Aidan Perkins' 3135 course work.</p>
-          <br></br>
-          
-            <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html">
-            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." />
-        </a>
-            
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="images/button_validation_wcag_updated_blue_check.png" width="88" height="31" alt="Validate webpage CSS." />
-        </a>
-        <p><a href="contract.html">Contract</a></p>
-        <p><a href="introduction.html">Introduction</a></p>
+            <header>
+                <div data-include="components/header.html"></div>
+                <script src="scripts/HTMLInclude.js"></script>
+            </header>
+            <main>
+                <h2>Home</h2>
+                <div>
+                    <p>Welcome to the home page for my ITIS3135 course work.</p>
+                </div>
+            </main>
+          <footer>
+           <div data-include="components/footer.html"></div>
+           <script src="scripts/HTMLInclude.js"></script>
+        </footer>
     </body>
 </html>
