@@ -68,3 +68,17 @@ figure{
         height:100%;
     }
 }
+
+.center{
+    text-align:center;
+}
+hr {
+    color:black;
+    background-color:black;
+    border:black 1px solid;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+}
