@@ -6,27 +6,50 @@
     <title>AmazingPenguin || Home</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
-        header {
-    background-color: #dadee9;
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #F1F0EA;
+
+}
+
+header {
+    background-color: #2D232E;
+    /* margin-top: -22px;
+    margin-left: -17px;
+    margin-right: -18px;
+    margin-bottom:-0px;
     padding-top: 20px;
-    margin: 0 auto;
+    padding-left:10px;
+    padding-right:20px;
+    padding-bottom:30px; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* margin: 0 auto; */
 }
 footer {
-    background-color: #dadee9;
-    margin: 0 auto;
+    background-color: #2D232E;
+    padding-bottom: 1rem;
+    /* margin: 0 auto; */
 }
 
 body {
     font-size:18px;
-    background-color: #202024;
-    color: #8787f3;
+    background-color: #474448;
+    color: #050517;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 5%;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction:column;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a {
-    color:#5f811f;
+    color:#0E7C7B;
     text-decoration: none;
 }
 
@@ -38,15 +61,16 @@ main {
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
+    background-color: #474448;
+    flex-grow:1;
 }
 
 h2 {
+    padding-top: 1rem;
     text-align:center;
 }
 
-img{
-    width: 100%;
-}
+
 
 figure{
     text-align:center;
@@ -68,8 +92,33 @@ figure{
         height:100%;
     }
 }
-main p {
+
+.center{
     text-align:center;
+}
+hr {
+    color:black;
+    background-color:black;
+    border:black 1px solid;
+    
+    margin: 2rem 0;
+}
+
+img{
+    width: 80%;
+    max-width: 600px;
+}
+figure{
+    width: 100%;
+
+}
+.content{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.indented{
+    margin-left: 10%;
 }
     </style>
 </head>
@@ -90,7 +139,7 @@ main p {
         <!-- <div data-include="../components/footer.html"></div> -->
          <p>Page Built By <a href="../perkinsdesignsllc.com/index.html">Aidan Perkins</a> &copy;2024</p>
         <script src="../scripts/HTMLInclude.js"></script>
-        <p><em>Doing things</em></p>
+        <p><em>Embrace your inner penguin</em></p>
     </footer>
 </body>
 </html>

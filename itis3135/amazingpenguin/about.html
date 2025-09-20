@@ -10,37 +10,46 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #F1F0EA;
 
 }
-        header {
-    background-color: #dadee9;
-    padding-top: 15px;
-    margin: 0;
-    padding-bottom: 5px;
+
+header {
+    background-color: #2D232E;
+    /* margin-top: -22px;
+    margin-left: -17px;
+    margin-right: -18px;
+    margin-bottom:-0px;
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right:20px;
+    padding-bottom:30px; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* margin: 0 auto; */
 }
 footer {
-    background-color: #dadee9;
-    margin: 0;
+    background-color: #2D232E;
+    padding-bottom: 1rem;
+    /* margin: 0 auto; */
 }
 
 body {
     font-size:18px;
-    background-color: #202024;
-    color: #8787f3;
+    background-color: #474448;
+    color: #050517;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* padding-bottom: 5%; */
-    display: flex;
-    flex-direction:column;
     height:100vh;
     width:100vw;
+    display: flex;
     flex-direction:column;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 a {
-    color:#5f811f;
+    color:#0E7C7B;
     text-decoration: none;
 }
 
@@ -50,19 +59,18 @@ a:hover {
 
 main {
     text-align: left;
-    /* margin-left: 20%;
+    margin-left: 20%;
     margin-right: 20%;
-    padding-bottom: 5%; */
+    background-color: #474448;
     flex-grow:1;
 }
 
 h2 {
+    padding-top: 1rem;
     text-align:center;
 }
 
-img{
-    width: 100%;
-}
+
 
 figure{
     text-align:center;
@@ -84,13 +92,33 @@ figure{
         height:100%;
     }
 }
-main p {
+
+.center{
     text-align:center;
+}
+hr {
+    color:black;
+    background-color:black;
+    border:black 1px solid;
+    
+    margin: 2rem 0;
+}
+
+img{
+    width: 80%;
+    max-width: 600px;
+}
+figure{
+    width: 100%;
+
 }
 .content{
     width: 95%;
     margin: 0 auto;
     max-width: 1100px;
+}
+.indented{
+    margin-left: 10%;
 }
     </style>
 </head>
@@ -106,7 +134,10 @@ main p {
     <main>
         <div class="content">
         <h2>About Us</h2>
-        <p>This paragraph talks about what we do and stuff.</p>
+        <br>
+        <p>Welcome to Amazing Penguin! We sell winter gear as well as almost any equipment
+            you may need for outdoor activities. From clothing, to snowboarding, we have it all!
+        </p>
         </div>
     </main>
     <footer>
@@ -115,7 +146,7 @@ main p {
 
         <script src="../scripts/HTMLInclude.js"></script>
 
-        <p><em>Doing things</em></p>
+        <p><em>Embrace your inner penguin</em></p>
     </footer>
 </body>
 </html>
