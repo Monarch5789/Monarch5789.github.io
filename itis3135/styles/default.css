@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #D7D6D6;
+    color: #f0f0f0;
 
 }
 
@@ -60,9 +60,22 @@ main {
 h2 {
     padding-top: 1rem;
     text-align:center;
+    padding-bottom: 1rem;
 }
 
+h3{
+    text-align: center;
+    padding-top: 1rem;
+}
 
+ul{
+    margin: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+li{
+    font-weight: normal;
+}
 
 figure{
     text-align:center;
