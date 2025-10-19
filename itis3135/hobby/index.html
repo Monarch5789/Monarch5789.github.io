@@ -6,8 +6,282 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITIS3135 || Hobby Project</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <style>/* body {
+    font-family: Impact, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 200%;
+}
+
+header {
+    background-color: #052036;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #F5DD90;
+
+}
+
+header {
+    background-color: #000320;
+    /* margin-top: -22px;
+    margin-left: -17px;
+    margin-right: -18px;
+    margin-bottom:-0px;
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right:20px;
+    padding-bottom:30px; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* margin: 0 auto; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+footer {
+    background-color: #000320;
+    padding-bottom: 1rem;
+    /* margin: 0 auto; */
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin-left:1rem;
+    margin-right:2rem;
+    padding-top: 1%;
+    clear:both;
+}
+
+
+body {
+    font-size:18px;
+    background-color: #324376;
+    color: #050517;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction:column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00fa70
+}
+
+main {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #586BA4;
+    flex-grow:1;
+    min-height: auto;
+}
+
+h2 {
+    padding-top: 1rem;
+    text-align:center;
+    padding-bottom: 1rem;
+}
+
+h3{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+ul{
+    margin: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+li{
+    font-weight: normal;
+}
+
+figure{
+    text-align:center;
+    font-style:italic;
+}
+
+@media only screen and (max-width: 700px){
+    main {
+        width:90%;
+        height:100%;
+        margin: 0% auto;
+    }
+}
+
+@media  only screen and (max-width: 300px){
+    main{
+        margin: 0 auto;
+        width: 100%;
+        height:100%;
+    }
+}
+
+@media  only screen and (max-width: 1200px){
+    main{
+        margin: 0 auto;
+        width: 85%;
+        height:100%;
+    }
+}
+
+.center{
+    text-align:center;
+}
+hr {
+    color:black;
+    background-color:black;
+    border:black 1px solid;
+    
+    margin: 2rem 0;
+}
+
+img{
+    width: 80%;
+    max-width: 600px;
+}
+figure{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+.content{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.indented{
+    margin-left: 10%;
+}
+.bold{
+    font-weight: bold;
+}
+.italicized{
+    font-style: italic;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);   
+    padding: 10%;
+    margin: 2rem;
+}
+thead, tr{
+    border: 2px solid rgb(140 140 140);
+}
+td, th{
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+form{
+    margin-left: 5rem;
+    padding-bottom: 5%
+}
+textarea{
+    color: black;
+}
+
+p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+input{
+    color: black;
+}
+input[type="submit"]{
+    display: block;
+    background-color: #324376;
+    color:#F5DD90;
+}
+iframe{
+    /* position: relative; */ 
+    display:block; 
+    margin: 0 auto; 
+} 
+.container{ 
+    overflow: visible; 
+}
+.scenter{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.bottom{
+    padding-bottom:5%;
+}
+.t2{
+    margin-right: auto;
+    margin-left:auto
+}
+
+</style>
 </head>
 
 <body>
@@ -15,9 +289,8 @@
         <h1>Music</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#who">Who</a></li>
                 <li><a href="#what">What</a></li>
+                <li><a href="#who">About Me</a></li>
                 <li><a href="#when">When</a></li>
                 <li><a href="#where">Where</a></li>
                 <li><a href="#how">How</a></li>
@@ -28,48 +301,157 @@
     </header>
 
     <main>
-        <section id = "home">
-            <h2>Home</h2>
-            <p class="center">Welcome to the home page for my midterm assignment.</p>
-        </section>
+        
         <section id="who">
             <h2>Who</h2>
-            <img src="" alt="">
-            
+            <p>Hello! My name is Aidan Perkins. I'm originally from Hillsborough New Jersey, and have a background in performing arts and computer science. 
+                I started with both at a fairly young age in middle school, and both continue to be passions to this day. Although I have decided to make my career in
+                computer science, I still very much enjoy music as a hobby.
+            </p>
+            <figure>
+            <img src="images/AISelect_20251019_112224_Gallery.jpg" alt="Me with the rest of my drumline.">
+            <figcaption>Me with my drumline and our instructors</figcaption>
+            </figure>
+            <p>Want to connect?</p>
+            <form action="#">
+                <label for="email">Email: </label><br>
+                <input class="inem" type="email" id="email" name="email"><br>
+                <label for="message">Message: </label><br>
+                <textarea name="message" id="message" rows="4" cols="50"></textarea>
+                <label for="submit"></label>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
         </section>
 
         <section id="what">
             <h2>What</h2>
-            <img src="" alt="">
+            <p>"Music" alone is a very broad description of my hobby. It would be more precise to say, I play both drums and the guitar. Music has been
+                proven to be an excellent creative outlet as well as a good means of teaching discipline, memory, and more. When I first started playing,
+                none of this was important to me, however, because I simply found it fun.
+            </p>
+            <figure>
+            <img src="images/gabriel-yuji--rROrwffwpk-unsplash.jpg" alt="Stock image person playing guitar">
+            <figcaption>Stock image of a person playing guitar. (Open Source)</figcaption>
+            </figure>
+            <p class="scenter">Here's a video of one of my final performances in my high school marching band!</p>
+            <br>
+            <div class="container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gA4Ww-VkkSM?si=FROEMZvqz0xM1C9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>            </div>
+            <br>
             <!-- Content goes here -->
         </section>
 
         <section id="when">
             <h2>When</h2>
-            <img src="" alt="">
+            <p>I truly started with music in fifth grade, when I joined the intermediate school band on a whim. I first joined playing trumpet, but quickly realized
+                it was not for me. At the suggestion of a friend, I tried switching to drums, and have never looked back. Several years later (after graduating high school) I decided I wanted to start learning the guitar,
+                so I bought one and started the slow process of teaching myself.
+            </p>
+            <figure>
+            <img src="images/asba-drums-ui5NdnQNjhw-unsplash.jpg" alt="">
+            <figcaption>Stock image of a drumset. (Open Source)</figcaption>
+            </figure>
+            <p>When playing or practicing, it is important to keep two things in mind. First, remember to take breaks. If you continually push yourself it can become very easy to burn out and lose interest. Additionally, be mindful of your neighbors or roommates, as music by definition creates noise, which can be disruptive.</p>
             <!-- Content goes here -->
         </section>
 
         <section id="where">
             <h2>Where</h2>
-            <img src="" alt="">
+            <figure>
+            <img src="images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="">
+            <figcaption>Stock image of Earth from space. (Open Source)</figcaption>
+            </figure>
+            <p>Music can be done anywhere in the world (and even outside of the Earth in the case of the Voyager probes). It's taken me to places I never expected to go. If you chose to take up music, it is something you can do pretty much wherever you are. Whether its performing on a stage or just in your bedroom, it doesn't matter.</p>
+            <figure>
+                <img src="images/AISelect_20251019_124443_Gallery.jpg" alt="">
+                <figcaption>I got to perform on this field!</figcaption>
+            </figure>
             <!-- Content goes here -->
         </section>
 
         <section id="how">
             <h2>How</h2>
-            <img src="" alt="">
+            <figure>
+            <img src="images/sarah-dao-2zHGVCrdxHw-unsplash.jpg" alt="">
+            <figcaption>Stock image of sheet music. (Open Source)</figcaption>
+            </figure>
+            <p>Learning how to play music is a topic that has been discussed and evolved on for centuries.
+                For some, it is possible to teach yourself how to play an instrument. For others, guided practice is necessary. Many
+                businesses and individuals provide these services. Some lessons can be video based online, or in person with a 1-on-1 structure.
+            </p>
+            <br>
+            <p>
+                My experience began with lessons in a classroom, and then evolved into one-on-one sessions with an instructor. When I started
+                 learning guitar, I decided to try teaching myself. Overall it has proven to be an exciting challenge.
+            </p>
             <!-- Content goes here -->
         </section>
 
         <section id="why">
             <h2>Why</h2>
-            <img src="" alt="">
+            <p>For me personally, one of the biggest motivations for continuing in music has been the social aspect.
+                During the time I spent in marching band, I made friends that I still talk to, and made bonds that will last a lifetime. Additionally, even today, I still connect with people over my
+                passion for music.
+            </p>
+            <figure>
+            <img src="images/20191026_204812_edit.jpg" alt="">
+            <figcaption></figcaption>
+            </figure>
+            <p class="bottom">
+                Outside of that, music is rewarding in and of itself. Being able to play through a challenging piece, or even being able to write your own music is a sense of accomplishment 
+                that is hard to beat. Even if you don't think you have the "talent" to play music, its worth giving a shot for this reason alone.
+            </p>
             <!-- Content goes here -->
         </section>
 
         <section id="ai">
             <h2>AI Prompts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prompt</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Please make it so this JavaScript also appends the currently viewed page to the title element as well as an H2 in main.</td>
+                    <td>This was done to meet project requirements, as I couldn't get it to work properly.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="t2">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Source</th>
+                        <th>Page Used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stock Drumset</td>
+                        <td><a href="https://unsplash.com/photos/black-and-white-drum-set-ui5NdnQNjhw">Unsplash</a></td>
+                        <td>"When"</td>
+                    </tr>
+                    <tr>
+                        <td>Stock person playing guitar</td>
+                        <td><a href="https://unsplash.com/photos/person-playing-guitar-in-close-up-photography--rROrwffwpk">Unsplash</a></td>
+                        <td>"What"</td>
+                    </tr>
+                    <tr>
+                        <td>Stock Earth from space</td>
+                        <td><a href="https://unsplash.com/photos/person-playing-guitar-in-close-up-photography--rROrwffwpk">Unsplash</a></td>
+                        <td>"Where"</td>
+                    </tr>
+                    <tr>
+                        <td>Stock sheet music</td>
+                        <td><a href="https://unsplash.com/photos/white-music-sheet-2zHGVCrdxHw">Unsplash</a></td>
+                        <td>"How"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="center">AI was not used for images. All images are either open source stock images or my own photos</p>
         </section>
     </main>
 

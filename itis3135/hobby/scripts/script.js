@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Show the "home" section by default
-    document.getElementById('home').style.display = 'block';
+    document.getElementById('what').style.display = 'block';
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
