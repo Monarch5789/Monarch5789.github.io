@@ -3,24 +3,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('nav a');
 
     // Hide all sections initially
-    sections.forEach(section => {
+    sections.forEach((section) => {
         section.style.display = 'none';
     });
 
-    // Show the "home" section by default
+    // Show the "what" section by default
     document.getElementById('what').style.display = 'block';
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
         link.addEventListener('click', (e) => {
             e.preventDefault(); // Prevent default anchor jump
             const targetSectionId = link.getAttribute('href').substring(1);
 
-            sections.forEach(section => {
-                if (section.id === targetSectionId) {
-                    section.style.display = 'block';
-                } else {
-                    section.style.display = 'none';
-                }
+            sections.forEach((section) => {
+                section.style.display = section.id === targetSectionId ? 'block' : 'none';
             });
         });
     });
