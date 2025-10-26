@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction Form</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script src="scripts/introduction.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+  <main>
+    <h2>Introduction Form</h2>
+   
+
+    <form id="introForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>First Name: <input type="text" id="firstName" name="firstName" value="John" placeholder="First Name" required></label><br>
+        <label>Middle Name/Initial: <input type="text" id="middleName" name="middleName" value="A." placeholder="Middle Name"></label><br>
+        <label>Preferred/Nickname: <input type="text" id="nickname" name="nickname" value="Johnny" placeholder="Preferred Name"></label><br>
+        <label>Last Name: <input type="text" id="lastName" name="lastName" value="Doe" placeholder="Last Name" required></label><br>
+        <label>Acknowledgement Statement: <input type="text" id="acknowledge" name="acknowledge" value="I have read and understood the course policies." required></label><br>
+        <label>Acknowledgement Date: <input type="date" id="ackDate" name="ackDate" required value="2025-10-26"></label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mascot Information</legend>
+        <label>Mascot Adjective: <input type="text" id="mascotAdj" value="Jovial" required></label><br>
+        <label>Mascot Animal: <input type="text" id="mascotAnimal" value="Duck" required></label><br>
+        <label>Divider Symbol: <input type="text" id="divider" value="||" required></label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Picture</legend>
+        <label>Image: <input type="url" id="picture" name="picture"  placeholder="Enter image URL or upload below"></label><br>
+        <input type="file" id="pictureUpload" accept="image/*"><br>
+        <label>Picture Caption: <input type="text" id="picCaption" value="Me enjoying a sunny day!" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>About Me</legend>
+        <label>Personal Statement:<br>
+          <textarea id="personalStatement" rows="3" required>I am a web development student passionate about coding and design.</textarea>
+        </label>
+        <h4>Main Bullets</h4>
+        <ol id="mainBullets">
+          <li><input type="text" value="Personal Background" required></li>
+          <li><input type="text" value="Academic Background" required></li>
+          <li><input type="text" value="Professional Goals" required></li>
+          <li><input type="text" value="Programming Skills" required></li>
+          <li><input type="text" value="Hobbies" required></li>
+          <li><input type="text" value="Favorite Technologies" required></li>
+          <li><input type="text" value="Fun Fact" required></li>
+        </ol>
+      </fieldset>
+
+      <fieldset>
+        <legend>Courses</legend>
+        <div id="courseContainer">
+          <div class="course">
+            <label>Department: <input type="text" class="dept" value="ITIS" required></label>
+            <label>Number: <input type="text" class="num" value="3135" required></label>
+            <label>Name: <input type="text" class="courseName" value="Web-Based Application Design" required></label>
+            <label>Reason: <input type="text" class="reason" value="Required for major" required></label>
+            <button type="button" class="deleteCourse">Delete</button>
+          </div>
+        </div>
+        <button type="button" id="addCourse">Add Course</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quote</legend>
+        <label>Favorite Quote:<br><textarea id="quote" rows="2" required>"Code is like humor. When you have to explain it, it’s bad."</textarea></label><br>
+        <label>Quote Author: <input type="text" id="quoteAuthor" value="Cory House" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extras</legend>
+        <label>Funny Thing (optional): <input type="text" id="funny"></label><br>
+        <label>Something I'd like to share (optional): <input type="text" id="share"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Links</legend>
+        <ol id="links">
+          <li><input type="url" value="https://linkedin.com/in/johndoe" required></li>
+          <li><input type="url" value="https://github.com/johndoe" required></li>
+          <li><input type="url" value="https://twitter.com/johndoe" required></li>
+          <li><input type="url" value="https://portfolio.johndoe.com" required></li>
+          <li><input type="url" value="https://blog.johndoe.com" required></li>
+        </ol>
+      </fieldset>
+
+      <div class="formButtons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</footer>
+</body>
+</html>

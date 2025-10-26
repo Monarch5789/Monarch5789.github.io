@@ -147,3 +147,14 @@ th, td{
     padding: 8px;
     text-align: left;
 }
+textarea{
+    color: black;
+}
+input{
+    color: black;
+}
+input[type="submit"]{
+    display: block;
+    background-color: #324376;
+    color:#F5DD90;
+}
