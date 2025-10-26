@@ -150,11 +150,11 @@ th, td{
 textarea{
     color: black;
 }
-input{
+input, button{
     color: black;
 }
 input[type="submit"]{
     display: block;
-    background-color: #324376;
-    color:#F5DD90;
+    background-color: #000000;
+    color:#000000;
 }

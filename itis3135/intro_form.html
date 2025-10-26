@@ -21,26 +21,26 @@
     <form id="introForm">
       <fieldset>
         <legend>Personal Information</legend>
-        <label>First Name: <input type="text" id="firstName" name="firstName" value="John" placeholder="First Name" required></label><br>
-        <label>Middle Name/Initial: <input type="text" id="middleName" name="middleName" value="A." placeholder="Middle Name"></label><br>
-        <label>Preferred/Nickname: <input type="text" id="nickname" name="nickname" value="Johnny" placeholder="Preferred Name"></label><br>
-        <label>Last Name: <input type="text" id="lastName" name="lastName" value="Doe" placeholder="Last Name" required></label><br>
+        <label>First Name: <input type="text" id="firstName" name="firstName" value="Aidan" placeholder="First Name" required></label><br>
+        <label>Middle Name/Initial: <input type="text" id="middleName" name="middleName" value="J." placeholder="Middle Name"></label><br>
+        <label>Preferred/Nickname: <input type="text" id="nickname" name="nickname" value="" placeholder="Preferred Name"></label><br>
+        <label>Last Name: <input type="text" id="lastName" name="lastName" value="Perkins" placeholder="Last Name" required></label><br>
         <label>Acknowledgement Statement: <input type="text" id="acknowledge" name="acknowledge" value="I have read and understood the course policies." required></label><br>
         <label>Acknowledgement Date: <input type="date" id="ackDate" name="ackDate" required value="2025-10-26"></label><br>
       </fieldset>
 
       <fieldset>
         <legend>Mascot Information</legend>
-        <label>Mascot Adjective: <input type="text" id="mascotAdj" value="Jovial" required></label><br>
-        <label>Mascot Animal: <input type="text" id="mascotAnimal" value="Duck" required></label><br>
+        <label>Mascot Adjective: <input type="text" id="mascotAdj" value="Amazing" required></label><br>
+        <label>Mascot Animal: <input type="text" id="mascotAnimal" value="Penguin" required></label><br>
         <label>Divider Symbol: <input type="text" id="divider" value="||" required></label><br>
       </fieldset>
 
       <fieldset>
         <legend>Picture</legend>
-        <label>Image: <input type="url" id="picture" name="picture"  placeholder="Enter image URL or upload below"></label><br>
+        <label>Image: <input type="url" id="picture" name="picture" value="https://cdn.discordapp.com/attachments/531323568026288140/1432080162668937347/Whiterose2_vrsmall.png?ex=68ffc015&is=68fe6e95&hm=dd263f287ba4acecb7b60ce8a7de7319be0416262eacd977fcf3b23fa022c5da&" placeholder="images/Whiterose2_vrsmall.png"></label><br>
         <input type="file" id="pictureUpload" accept="image/*"><br>
-        <label>Picture Caption: <input type="text" id="picCaption" value="Me enjoying a sunny day!" required></label>
+        <label>Picture Caption: <input type="text" id="picCaption" value="Profile Picture" required></label>
       </fieldset>
 
       <fieldset>
@@ -49,15 +49,16 @@
           <textarea id="personalStatement" rows="3" required>I am a web development student passionate about coding and design.</textarea>
         </label>
         <h4>Main Bullets</h4>
-        <ol id="mainBullets">
-          <li><input type="text" value="Personal Background" required></li>
-          <li><input type="text" value="Academic Background" required></li>
-          <li><input type="text" value="Professional Goals" required></li>
-          <li><input type="text" value="Programming Skills" required></li>
-          <li><input type="text" value="Hobbies" required></li>
+        <ul id="mainBullets">
+          <li><input type="text" value="Personal Background: I was born and raised in New Jersey, and have a passion for technology, science fiction, and music." required></li>
+          <li><input type="text" value="Professional Background: I have worked as a TA for the last 3 semesters, before that I worked retail." required></li>
+          <li><input type="text" value="Academic Background: I am a Junior in the Cybersecurity program here at UNCC." required></li>
+          <li><input type="text" value="Primary Computer Platform: Windows 11 Desktop" required></li>
+          <!-- <li><input type="text" value="Hobbies" required></li>
           <li><input type="text" value="Favorite Technologies" required></li>
-          <li><input type="text" value="Fun Fact" required></li>
-        </ol>
+          <li><input type="text" value="Fun Fact" required></li> -->
+          <!-- <li>Courses I'm taking and why: </li> -->
+        </ul>
       </fieldset>
 
       <fieldset>
@@ -76,8 +77,8 @@
 
       <fieldset>
         <legend>Quote</legend>
-        <label>Favorite Quote:<br><textarea id="quote" rows="2" required>"Code is like humor. When you have to explain it, it’s bad."</textarea></label><br>
-        <label>Quote Author: <input type="text" id="quoteAuthor" value="Cory House" required></label>
+        <label>Favorite Quote:<br><textarea id="quote" rows="2" required>&quot;I want to ask you a question, and that is: <span class="bold">What is in your life's blueprint?&quot;</textarea></label><br>
+        <label>Quote Author: <input type="text" id="quoteAuthor" value="Dr. Martin Luther King Jr." required></label>
       </fieldset>
 
       <fieldset>
@@ -86,16 +87,7 @@
         <label>Something I'd like to share (optional): <input type="text" id="share"></label>
       </fieldset>
 
-      <fieldset>
-        <legend>Links</legend>
-        <ol id="links">
-          <li><input type="url" value="https://linkedin.com/in/johndoe" required></li>
-          <li><input type="url" value="https://github.com/johndoe" required></li>
-          <li><input type="url" value="https://twitter.com/johndoe" required></li>
-          <li><input type="url" value="https://portfolio.johndoe.com" required></li>
-          <li><input type="url" value="https://blog.johndoe.com" required></li>
-        </ol>
-      </fieldset>
+      
 
       <div class="formButtons">
         <button type="submit">Submit</button>
