@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #f0f0f0;
+    /* color: #f0f0f0; */
 
 }
 
@@ -19,11 +19,14 @@ header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* margin: 0 auto; */
+        color: #f0f0f0;
 }
 footer {
     background-color: #36413E;
     padding-bottom: 1rem;
     /* margin: 0 auto; */
+        color: #f0f0f0;
+    
 }
 
 body {
@@ -38,6 +41,7 @@ body {
     flex-direction:column;
     overflow-x: hidden;
     overflow-y: scroll;
+        color: #f0f0f0;
 }
 
 a {
@@ -55,17 +59,21 @@ main {
     margin-right: 20%;
     background-color: #5D5E60;
     flex-grow:1;
+    padding-bottom: 1rem;
+        color: #f0f0f0;
 }
 
 h2 {
     padding-top: 1rem;
     text-align:center;
     padding-bottom: 1rem;
+        color: #f0f0f0;
 }
 
 h3{
     text-align: center;
     padding-top: 1rem;
+        color: #f0f0f0;
 }
 
 ul{
@@ -157,4 +165,8 @@ input[type="submit"]{
     display: block;
     background-color: #000000;
     color:#000000;
+}
+pre code{
+    color: black;
+    
 }
