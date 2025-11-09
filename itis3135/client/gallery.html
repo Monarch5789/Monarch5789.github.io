@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Client Project - Gallery</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+    <script src="scripts/slideshow.js"></script>
     
-</body>
+    </head>
+        <body>
+            <header>
+                <h1>Art Portfolio</h1>
+                <hr class="white">
+                <nav>
+                    <a href="index.html">Home</a>
+                    ||
+                    <a href="gallery.html">Gallery</a>
+                    ||
+                    <a href="faq.html">Frequently Asked Questions</a>
+                    ||
+                    <a href="contact.html">Contact</a>
+                    ||
+                    <a href="about.html">Current Projects</a>
+                    
+                    
+                </nav>                
+            </header>
+            <main>
+                <div class="content">
+                
+                <h2>Gallery</h2>
+                
+                <p>{GALLERY OF IMAGES}</p>
+                
+                <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <figure>
+    <img src="images/hornetgirl.png" alt="hornet" >
+    <figcaption>Hornet</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <figure>
+    <img src="images/emily.png" alt="emily">
+    
+    <figcaption>Emily</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <figure>
+    <img src="images/image.png" alt="mech">
+    <figcaption>Mech</figcaption>
+    </figure>
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <figure>
+    <img src="images/image_2.png" alt="ella">
+    <figcaption>Ella</figcaption>
+    </figure>
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <figure>
+    <img src="images/lancermech.png" alt="lancer mech">
+    <figcaption>Lancer Mech</figcaption>
+    </figure>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+                </div>
+            </main>
+        <footer>
+            <br>
+            <p>&copy;2025 All rights reserved.</p>
+            <p>Designed by <a href="../perkinsdesignsllc.com/">Aidan Perkins</a></p>
+        </footer>
+    </body>
 </html>
