@@ -343,3 +343,8 @@ form{
     margin-right: 5rem;
     font-size: larger;
 }
+#myCanvasContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

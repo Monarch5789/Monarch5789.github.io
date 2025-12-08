@@ -10,10 +10,14 @@
     <style>
 
     </style>
-    
+    <script src="scripts/p5js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     </head>
         <body>
             <header>
+            <div data-include="components/header.html"></div>
+            </header>
+            <!-- <header>
                 <h1>Art Portfolio</h1>
                 <hr class="white">
                 <nav>
@@ -29,20 +33,28 @@
                     
                     
                 </nav>                
-            </header>
+            </header> -->
             <main>
                 <div class="content">
                 
                 <h2>Home</h2>
                 <br>
                 <p class="test1">I am passionate visual artist whose work blends bold imagination with intricate detail. Drawing inspiration from futuristic landscapes, dynamic characters, and everyday life, I create pieces that capture both emotion and movement. Whether it’s a sleek mech design or a whimsical character illustration, each artwork invites you to step into a unique world. Explore the gallery, learn more about the creative process, and discover the stories behind every piece.</p>
-
+                <br>
+                <p class="center"><em>Click in the blank space to draw!</em></p>
+                <div id="myCanvasContainer"></div>
             </div>
+            
             </main>
-        <footer>
+            <footer>
+            <div data-include="components/footer.html"></div>
+            <script src="scripts/HTMLInclude.js"></script>
+    
+        </footer>
+        <!-- <footer>
             <br>
             <p>&copy;2025 All rights reserved.</p>
             <p>Designed by <a href="../perkinsdesignsllc.com/">Aidan Perkins</a></p>
-        </footer>
+        </footer> -->
     </body>
 </html>
