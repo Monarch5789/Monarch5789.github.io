@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     /* color: #f0f0f0; */
+    font-family: RWBY-Z, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 @font-face {
     font-family: RWBY-Z;
-    src: url('RWBY-Z.ttf') format('truetype');
+    src: url('../fonts/RWBY-Z.ttf') format('truetype');
 }
 
 header {
