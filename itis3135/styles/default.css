@@ -85,6 +85,11 @@ ul{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+#mainBullets{
+    margin: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 li{
     font-weight: normal;
 }
